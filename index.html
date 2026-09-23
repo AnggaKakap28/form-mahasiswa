@@ -1,0 +1,97 @@
+<!doctype html>
+<!-- Menggunakan HTML5 -->
+
+<html lang="id">
+  <!-- Bahasa halaman adalah Indonesia -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Mengatur karakter halaman -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Membuat halaman responsif -->
+
+    <title>Register Akun Mahasiswa</title>
+    <!-- Judul tab browser -->
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- Menghubungkan HTML dengan CSS -->
+  </head>
+
+  <body>
+    <!-- Isi halaman -->
+
+    <div class="container">
+      <!-- Kotak utama form -->
+
+      <h1>Register Akun Mahasiswa</h1>
+      <!-- Judul form -->
+
+      <form action="regist.php" method="POST">
+        <!-- Data dikirim ke simpan.php dengan POST -->
+
+        <label for="nama">Nama</label>
+        <!-- Label input nama -->
+
+        <input
+          type="text"
+          id="nama"
+          name="nama"
+          placeholder="Masukkan nama"
+          required
+        />
+        <!-- Input nama -->
+
+        <label for="nim">NIM</label>
+        <!-- Label input NIM -->
+
+        <input
+          type="text"
+          id="nim"
+          name="nim"
+          placeholder="Masukkan NIM"
+          required
+        />
+        <!-- Input NIM -->
+
+        <label for="username">Username</label>
+        <!-- Label input program studi -->
+
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Masukkan username"
+          required
+        />
+        <!-- Input username -->
+
+        <label for="email">Email</label>
+
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Masukkan email"
+          required
+        />
+
+        <label for="password">Password</label>
+
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Masukkan password"
+          required
+        />
+
+        <button type="submit">Simpan</button>
+        <!-- Tombol mengirim data -->
+
+        <p>Sudah punya akun? <a href="login.html">Login</a></p>
+      </form>
+      <!-- Menutup form -->
+    </div>
+  </body>
+</html>
